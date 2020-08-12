@@ -1,8 +1,12 @@
-const express = require('express');
+// const express = require('express');
+
+// const db = require('../data/db-config');
+
+// const router = express.Router();
+
+const router = require('express').Router();
 
 const db = require('../data/db-config');
-
-const router = express.Router();
 
 router.get('/', (req, res) => {
     db('cars')
